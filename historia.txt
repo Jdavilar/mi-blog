@@ -3,4 +3,4 @@ Soy Jorge Enrique Davila Romo
 Me gusta correr y aprender
 
 Ingeniero de profesión y este es un archivo de prueba para git y GitHub 
-Version no seis
+Realicaremos una version 7 desde la original, la seis queda en el olvido
