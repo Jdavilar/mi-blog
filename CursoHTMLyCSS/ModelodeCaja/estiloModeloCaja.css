@@ -1,0 +1,19 @@
+/* Resetear todos los estilos 
+RECOMENDACION INCLUIR ESTE CODIGO EN TODOS LOS LOS CSS*/
+
+*{
+    /* ESTA FUNCION REALIZA UN CALCULO DE TAMAÑO DE PADDING + BORDING Y LO RESTA DEL
+    TODO DE LA CAJA */
+    box-sizing: border-box;
+    /* RESETEAMOS PARA TODAS LAS ETIQUETAS EL PADDING Y EL MARGIN EN 0 */
+    padding: 0;
+    margin: 0;
+}
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    /* primer numero Arriba y abajo, segundo derecha e izquierda */
+    padding: 20px 35px;
+
+}

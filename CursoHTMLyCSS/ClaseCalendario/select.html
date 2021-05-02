@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiqueta select,para usar listas en un formulario</title>
+</head>
+<body>
+    <main>
+    <form action="">
+           <!-- Usar una lista con select
+            <select name="curso" id="">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTMLS">HTMLS</option>
+                <option value="Css3">Css3</option>
+                <option value="Python">Phyton</option>
+           </select> -->
+          
+           <!-- buenas practica para una lista, pensando en movil-->
+           <input list="cursos">
+           <datalist id="cursos">
+               <option value="JavaScript"></option>
+               <option value="HTML5"></option>
+               <option value="CSS3"></option>
+               <option value="Python"></option>
+           </datalist>
+    </form>
+
+    </main>
+</body>
+</html>

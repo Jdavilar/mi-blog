@@ -1,0 +1,49 @@
+/* Estilo de contenedor del menú, para todo la ul/lista desordenad */
+.contenedor-nav{
+    /* Cambiamos el margen de arriba de la caja  */
+    margin-top: 10px;
+    /*cambiar los estilos de una lista li  */
+    list-style: none;
+    /* Espacio interno del contenedor ul lista desordenada */
+    padding-left: 0px;
+    background-color: #13a4a4;
+}
+
+/* estilo de cada elemento del bloque menú */
+.contenedor-nav__elemento {
+    /* Cambiar de forma vertical la lista a horizontal  */
+    display: inline-block;
+}
+
+/* Ser especifico en css a todas las etiquetas a de contenedor de la barra de navegacion
+coloca este estilo */
+.contenedor-nav__elemento a {
+    color: white;
+    padding: 15px;
+    /* El borde de la caja de cada elemento */
+    border-radius: 12px;
+    /* Retiramos la linea de abajo de cada elemento */
+    text-decoration: none;
+    /* Colocamos un color diferente al fondo de cada elemento */
+    background-color: blue;
+}
+
+/* Crear una Pseudo clase a la etiqueta a: cuando el mouse este arriba del elmento*/
+.contenedor-nav__elemento a:hover {
+    color: burlywood;
+
+}
+
+/* Crear una Pseudo clase a la etiqueta a:cuando Damos click a un elemento*/
+.contenedor-nav__elemento a:active {
+    color: red;
+
+}
+
+/* Crear un Pseudo elemento de la etiqueta a::despues del elemento agreagar algo */
+
+.contenedor-nav__elemento a::after{
+    /* Despues agrega este contenido */
+    content: " | ";
+
+}
