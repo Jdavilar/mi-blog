@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;   
+}
+
+h1 {
+    color: blueviolet;
+    margin-bottom: 10px;
+    /* No se aplica ya que vale en especificidad */
+    /* 0,0,0,0,1 */
+    font-family: serif;
+}
+
+#titulo-pagina {
+    
+    /* Este estilo se aplica por su valor de especificidad */
+    /* vale 0,0,1,0,0  un 3 */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.cabecera__titulo {
+    font-size: 18px;
+    /* No se implementa por especificidad */
+    /* Debido a que el #id declarado de nombre #titulo-pagina  */
+    /* y segun la regla de especificidad el id vale  0,0,1,0,0 un 3*/
+    /* Y la .clase vale 0,0,0,1,0 un 2 */
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#menu-cabecera{
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#menu-cabecera li{
+    display: inline-block ;
+}
+
+#menu-cabecera a{
+    color:cornsilk;
+    background-color: darkcyan;
+    padding: 5px;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+#menu-cabecera .navegador__blog {
+
+    /*  En este caso el estilo que se aplica es este  */
+    /* Ya que el #id y la clase valen 0,0,1,1,0  */
+    /* Y el background-color del id menu-cabecera y etiqueta valen 0,0,1,0,1 */
+    background-color: orange;
+}
+
+/* Se usan los id para ver como se valoran en este ejemplo
+
+Pero la buena practica es usar clases */
+
