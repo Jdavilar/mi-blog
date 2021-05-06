@@ -1,0 +1,7 @@
+.main-texto{
+    /* hereda 16 pixeles de html por default y 1.5 es 16*1.5= 24 pixeles
+    Medida relativa en funcion de la etiqueta padre directa
+    */
+    font-size: 1.5em;
+}
+

@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+/* Hack para usar el rem como un pixel  */
+html {
+    font-size: 62.5%;
+}
+
+
+
+.main-texto div {
+    font-size: 2.6rem;
+}
+
+p {
+    /* Un rem siempre sera igual al valor de la etiqueta html de origen 16px */
+    
+       font-size: 1.5rem;
+   }

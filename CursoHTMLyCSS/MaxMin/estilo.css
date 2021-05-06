@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*Esto es por regla de 3 es decir 16px sera 1.6 rem, 20pixeles sera 2.0 rem*/
+    font-size: 62.5%;
+    }
+
+main {
+    /* Este contenedor ocupara el 100 de view en ancho y alto */
+    width: 100vw;
+    height: 100vh;
+    background-color: darkmagenta;
+}
+
+p{
+    font-size: 1.6rem;
+}
+section {
+    width: 80%;
+    /* Para poder usasar min,necesitamos un width base en porcentaje */
+    min-width: 320px;
+    max-width: 500px;
+    min-height: 500px;
+    /* Centrar este contenedor, 0 es arriba y abajo , auto es derecha e izquierda */
+    margin: 0 auto;
+    background-color: orange;
+}

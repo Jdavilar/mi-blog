@@ -1,0 +1,18 @@
+/* Todas las etiquetas p que esten dentro de una caja con un h2 
+hermanos generales
+h2 ~ p {
+    color: brown;
+}
+*/
+
+/* Coloca el estilo a la etiqueta parrafo que sea hija directa de un div 
+div > p{
+color: cadetblue;
+}
+*/
+
+/* Todas las etiquetas parrafo que estén dentro de un div */
+div p {
+color: chartreuse;
+
+}
