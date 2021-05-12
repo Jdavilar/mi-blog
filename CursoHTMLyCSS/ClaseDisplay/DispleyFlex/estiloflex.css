@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+} 
+
+body {
+    font-size: 1.6rem;
+}
+
+.contenedor{
+    /* Asigno una altura para poder manipular sus hijos */
+    /* 50 View height; 50% de la pantalla 
+    height: 50vh; */
+    border: 0.3rem solid black;
+    /* Todas las etiquetas hijas estaran libres, y podremos jugar con su posicion */
+    display: flex;
+    /* Nota.- Con esta linea las cajas se distribuyen en el numero de renglones 
+    necesarios */
+    flex-wrap: wrap; 
+    /* Propiedad de display flex, alinea las etiquetas hijas 
+    align-items: center; */
+} 
+
+
+.caja__general{
+    flex-basis: 10rem;
+    flex-grow: 1; 
+    height: 10rem;
+}
+
+.caja1 {
+    background-color: blue;
+    /* Esta propiedad le dice al navegador, 
+    que esta caja tome el espacio que esta sin ocupar 
+    flex-grow: 1; */
+}
+.caja2 {
+    background-color:rebeccapurple;
+}
+.caja3 {
+    background-color: violet;
+}
+.caja4 {
+    background-color: rosybrown;
+}
+.caja5 {
+    background-color:burlywood;
+}
+.caja6 {
+    background-color:brown;
+}

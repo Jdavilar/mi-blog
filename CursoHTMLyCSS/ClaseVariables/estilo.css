@@ -1,0 +1,46 @@
+/* Declaracion de variables debe ser en root */
+/* Hace referencia a la etiqueta HTML */
+:root {
+    --color-p: maroon;
+    --color-s: black;
+    --font-t: 1.8rem;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    /* De esta forma llamamos una variable */
+    background-color: var(--color-p);
+}
+
+main {
+    width: 100vw;
+    height: 70vh;
+    /* De esta forma llamamos una variable */
+    font-size: var(--font-t);   
+}
+
+h1{
+    /* Colocamos la regla css del tipo de letra google font */
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: maroon;
+    text-align: center;
+}
+footer{
+    width: 100vw;
+    height: 15vh;
+    /* De esta forma llamamos una variable */
+    background-color:var(--color-s);
+}

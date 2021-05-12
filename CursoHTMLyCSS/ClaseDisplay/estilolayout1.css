@@ -53,6 +53,7 @@ html{
     margin: 50px;
   }
 .contenido p {
+    font-family: 'Open Sans',sans-serif;
     font-size: 1.9rem;
     color: snow;
     text-align: center;

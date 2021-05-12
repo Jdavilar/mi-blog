@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head> 
+     <!--- etiqueta meta para uso de caracteres especiales-->
+   <meta charset="UTF-8" />
+     <!-- etiqueta meta para crear la descripcion SEO-->
+   <meta name="description" content="Curso de manejo de HTML y CSS"/>
+     <!-- etiqueta meta para permitir la indexacion de buscadores-->
+   <meta name="robots" content="index,follow"/>
+     <!-- etiqueta meta para darle el titulo de la pagina-->
+   <title>Calse, Imagenes responsivas</title>
+      <!-- meta para paginas responsivas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Señalamos nuestra hoja de estilos-->
+    <link rel="stylesheet" href="./estilo.css">  
+</head>
+ <body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <!-- Recordaar  movile first, por ese motivo usamos la imagen más pequeña-->
+       <picture>
+             <!-- Señalamos que opciones tiene el navegador para mostrar una imagen  -->
+             <!-- La etiqueta con el View más grande debe ir primero -->
+             <source media="(min-width:1300px)" srcset="./img/tigre_big.jpeg">
+             <source media="(min-width:1000px)" srcset="./img/tigre_med.jpeg">
+           <!-- Imagen de base -->
+            <img src="./img/tigre_small.jpeg" alt="Esto es un tigre">
+       </picture>
+      
+
+    </main>
+    <footer>
+     
+    </footer>
+</body>
+</html>
