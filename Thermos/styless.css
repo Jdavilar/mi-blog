@@ -1,0 +1,328 @@
+/*  Forma de colocar los etilos
+    Estilos de posicionamiento
+    Modelo de caja 
+    Tipografia
+    Estilos visuales
+    Otros*/
+
+:root {
+    /* colores */
+    --naranja-base: #f7931A;
+    --naranja-suave: #ffe9d5;
+    --azul-secundario: #1A9Af7;
+    --azul-claro: #e7f5ff;
+    --negro-tibio: #201e1c;
+    --negro: #282623;
+    --gris: #BABABA;
+    --blanco-apagado:#faf8f7;
+    --blanco: #fff;
+}
+
+    *{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* Dimension más pequeña en un celular */
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img{
+    width: 150px;
+    height: 54px;
+    margin-top: 60px;
+    /* Colocamos el logo en el centro 
+    a un elemento que tiene una propiedad displey flex lo centramos con align self*/
+    align-self: center;
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.80);
+}
+
+.header__contenedor {
+    /* El ancho sera el 90% entre 288px y 900px */
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header__contenedor h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--blanco-apagado);
+}
+.header__contenedor p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--naranja-suave);
+}
+
+.header__contenedor .header__boton{
+    /* posision absoluta, mepermite acomodar el boton donde yo designe */
+    position: absolute;
+    /* regla de css para calcular  */
+    /*   calcula el 50% centro de la pantalla y le resta 150px que son del tamaño del boton*/
+    left: calc(50% - 150px);
+   /* Colocamos el boton y definimos su tamaño */
+    top: 278px;
+    display: block;
+    margin: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--blanco-apagado);
+    /* Asignamos la sombre */
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+    /* Asignamos los bordes, primero reset y segundo asignamos */
+    border: none;
+    border-radius: 10px;
+    /* Tamaño a las fuentes del boton */
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* Quitamos la decoracion por defaul de la etiqueta a  */
+    text-decoration: none;
+    color: var(--negro);
+}
+
+/* Este estilo es para llamar el icono al boton */
+.header__boton span {
+    /* span tiene un display por defaul inline */
+    /* Para poder ver el icono tenemos que cambairlo a block o inline-block */
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 3px;
+    background-image: url('./assets/Iconos/icono-boton-proyecto.svg');
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--blanco-apagado);
+}
+.main-listado__contenedor{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-listado__contenedor .main-listado__Img-fondo{
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('./assets/img/Termo_1_320.png');
+    /* Aseguremos que la imagen quede en el centro y se tenga visibiliad de la misma */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+.main-listado__texto {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.main-listado__texto h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color:var(--negro);
+}
+
+
+.main-listado__texto h3{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color:var(--negro);
+    
+}
+.main-listado__texto p {
+    margin-bottom: 17px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5 rem;
+    color: #757575;
+}
+
+
+.main-listado__tabla20oz{
+    width: 77%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.main-listado__tabla20oz .tabla20oz__titulo{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+    color: var(--naranja-base);
+}
+
+.tabla20oz__contenedor{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+
+}
+.tabla20oz__contenedor table{
+    width: 100%;
+    height: 100%
+}
+.tabla20oz__contenedor td{
+    width: 33%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--gris);
+    background-color: var(--blanco);
+}
+.tabla20oz__contenedor  .tabla20oz__izq {
+    border-radius: 15px 0 0 0;
+}
+.tabla20oz__contenedor  .tabla20oz__dr{
+    border-radius: 0 15px 0 0;
+} 
+.tabla20oz__contenedor  .tabla_20oz_abajo_iz{
+    border-radius: 0 0 0 15px;
+} 
+                         
+.tabla20oz__contenedor  .tabla_20oz_abajo_dr{
+    border-radius: 0 0 15px 0;}
+
+.tabla20oz__contenedor  .tabla20oz__med {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color:#757575;
+}
+.tabla20oz__fecha{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--naranja-suave);
+    border-radius: 9px;
+}
+
+.tabla20oz__fecha p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--negro-tibio);
+    font-weight: 300;
+}
+
+.main-producto-detalles{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--negro-tibio);
+}
+.main-producto-detalles-logo{
+    /* Revisar quien es el padre directo, debe ser relative */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/img/logo_40_40_sinTexto_small.png');
+    top: -16px;
+    left: calc(50% - 26px);    
+}
+.main-producto-detalles-texto{
+    /* width: 90%; */
+    min-width: 288px;
+     height: auto;
+    margin: o auto; 
+    margin-top: 20px;
+    text-align: center;
+}
+.main-producto-detalles-texto h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--blanco);
+    text-align: center;
+}
+.main-producto-detalles-texto p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.producto-tarjeta__detalles{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 200px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--negro);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.producto-tarjeta__detalles .reloj{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-image: url('./assets/Iconos/Tiempo.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.producto--tarjeta_titulo{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:var(--blanco-apagado)
+}
+
+.producto--tarjeta_body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+
+.producto-tarjeta__contenedor{}
+
+
