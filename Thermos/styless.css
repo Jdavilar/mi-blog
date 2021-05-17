@@ -297,12 +297,42 @@ main{
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
+.producto-tarjeta__detalles .precio{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-image: url('./assets/Iconos/precio_icono_naranja.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .producto-tarjeta__detalles .reloj{
     display: inline-block;
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
-    background-image: url('./assets/Iconos/Tiempo.svg');
+    background-image: url('./assets/Iconos/reloj_icono_naranja.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.producto-tarjeta__detalles .confiable{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-image: url('./assets/Iconos/confiable_icono_naranja.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.producto-tarjeta__detalles .personalizado{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    background-image: url('./assets/Iconos/personalizado_icono_naranja.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -323,6 +353,186 @@ main{
 }
 
 
-.producto-tarjeta__contenedor{}
+.contenedor-mujer-termo__img{
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px; 
+    margin: 0 auto;
+    height: 50vh;
+    background-image: url('./assets/img/mujer_termo_680_680_small.jpeg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
 
+.contenedor-mujer-termo__img h2{
+    padding-top: 14em;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--blanco);
+}
 
+.main-contenedor-planes{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.contenedor-planes-titulo{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.contenedor-planes-titulo h2{
+    padding-top:50px ;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--negro);
+}
+.contenedor-planes-titulo p{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+/* Estos estilos son para el slider de los planes */
+.tarjetas-planes-destacados__slider{
+    display: flex;
+    /* gap: 50px;             esta linea es valida pero solo funciona en algunos navegadores, hay que esperar para usarla */
+    height: 316px;
+    /* reglas para el scroll */
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    align-items: center;
+}
+
+.tarjeta-plan-uno{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 210px;
+    max-width: 400px;
+    height: 250px;
+    margin: 50px 15px 0;
+    padding: 0 15px;
+    background-color: var(--blanco);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+
+.recomendado-20onzas{
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 61px);
+    width: 120px;
+    padding-top: 6px;
+    height: 31px;
+    font-weight: bold;
+    line-height: 2.0rem;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    color: var(--blanco-apagado);
+    background-color: var(--naranja-base);
+}
+
+.plan-uno-titulo{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--negro);
+}
+
+.plan-uno--precio {
+    font-size: 5.2rem;
+    padding: 5px 0;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color: var(--negro);
+}
+.plan-uno--precio span{
+    font-size: 1.8rem;
+    font-weight: 300; 
+    vertical-align: text-top;
+}
+.plan-uno-ahorro{
+    font-size: 1.2rem;
+    color: #757575;
+}
+.plan-uno-cta{
+    font-family: 'DM Sans', sans-serif;
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--blanco-apagado);
+    border: 2px solid var(--naranja-base);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--negro-tibio);
+}
+
+.plan-uno-cta span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/Iconos/arrow-right_naranja.svg');
+    vertical-align: text-bottom;
+}
+.plan_termo-img{
+    display: inline-block;
+    width: 39px;
+    height: 89px;
+    background-image: url('./assets/img/termo-plata-40_90.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--naranja-suave);
+}
+
+footer section{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+} 
+footer .whatsapp{
+   position:fixed;
+   bottom:40px;
+   right:40px;
+   z-index:999;
+   width: 60px; 
+   height: 60px;
+}
+footer .izquierda ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.izquierda li{
+    margin: 10px 0;;
+} 
+.izquierda a{
+    text-decoration: none;
+    color: var(--negro-tibio);
+}
+footer .derecha{
+
+}
